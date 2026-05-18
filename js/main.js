@@ -834,13 +834,13 @@ function buildProductCardHTML(p, extraClass = '') {
   const badgeHTML = p.badge ? `<span class="product-badge"${p.badgeColor ? ` style="background:${p.badgeColor};color:#fff;"` : ''}>${p.badge}</span>` : '';
   return `
     <div class="product-card h-100 ${extraClass}" data-category="${p.category}" data-product-id="${p.id}">
-      <a href="product.html?id=${p.id}" class="product-card-image-link">
+      <a href="javascript:void(0)" class="product-card-image-link">
         <div class="product-card-image">
           <img src="${p.image}" alt="${p.name}">${badgeHTML}
         </div>
       </a>
       <div class="product-card-body">
-        <a href="product.html?id=${p.id}" class="product-card-title-link"><h3 class="product-card-title">${p.name}</h3></a>
+        <a href="javascript:void(0)" class="product-card-title-link"><h3 class="product-card-title">${p.name}</h3></a>
         <div class="product-card-price">
           <span>يبدأ من:</span> ${p.price} ${SAR_SVG}
         </div>
@@ -874,7 +874,7 @@ function buildFeaturedProductCardHTML(p) {
   return `
     <article class="featured-product-card" data-product-id="${p.id}">
       <div class="featured-product-image">
-        <a href="products.html?cat=${p.category}" class="featured-product-image-link" aria-label="${p.name}">
+        <a href="javascript:void(0)" class="featured-product-image-link" aria-label="${p.name}">
           <img src="${p.image}" alt="${p.name}">
         </a>
         ${badgeHTML}
@@ -886,7 +886,7 @@ function buildFeaturedProductCardHTML(p) {
         </button>
       </div>
       <div class="featured-product-info">
-        <a href="products.html?cat=${p.category}" class="featured-product-title-link">
+        <a href="javascript:void(0)" class="featured-product-title-link">
           <h3 class="featured-product-title">${p.name}</h3>
         </a>
         <p class="featured-product-desc">${p.desc}</p>
