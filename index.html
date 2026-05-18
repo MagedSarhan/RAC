@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="RAC — منصة سعودية للحلول التقنية، نوفر كاميرات، شاشات، أسلاك، إكسسوارات وخدمات تركيب وصيانة ودعم فني.">
+  <meta name="keywords" content="RAC, حلول تقنية, كاميرات مراقبة, شاشات, أسلاك, إكسسوارات, صيانة, تركيب, السعودية">
+  <meta name="author" content="RAC">
+  <title>RAC | حلول تقنية ومنتجات ذكية</title>
+
+  <!-- Preconnect Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Changa:wght@500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="image/logo.png">
+  <link rel="apple-touch-icon" href="image/logo.png">
+  <meta property="og:title" content="RAC | حلول تقنية ومنتجات ذكية">
+  <meta property="og:description"
+    content="منتجات تقنية مختارة وخدمات تركيب وصيانة ودعم فني للأفراد والمنشآت.">
+  <meta property="og:image" itemprop="image" content="image/logo.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="image/logo.png">
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════
+       PAGE LOADER
+       ═══════════════════════════════════ -->
+  <div class="page-loader" id="pageLoader">
+    <img src="image/logo.png" alt="RAC">
+    <div class="loader-bar"></div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════
+       NAVBAR
+       ═══════════════════════════════════ -->
+  <nav class="navbar navbar-expand-lg navbar-alamah" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="image/logo.png" alt="RAC">
+      </a>
+
+      <!-- Cart + Toggler for mobile -->
+      <div class="d-flex align-items-center d-lg-none">
+        <button class="nav-cart-btn me-2" id="cartBtnMobile" type="button" aria-label="السلة">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg>
+          <span class="cart-badge" id="cartBadgeMobile">0</span>
+        </button>
+        <button class="navbar-toggler border-0 px-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-label="تبديل القائمة">
+          <div class="hamburger-icon" id="hamburgerIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Desktop Navbar -->
+      <div class="collapse navbar-collapse d-none d-lg-block" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active-page" href="#">الرئيسية</a></li>
+          <li class="nav-item rac-nav-has-mega">
+            <a class="nav-link rac-nav-trigger" href="#" aria-haspopup="true" aria-expanded="false">
+              الفئات
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+            </a>
+            <div class="rac-mega-menu" aria-label="قائمة الفئات">
+              <div class="container">
+                <div class="rac-mega-panel rac-mega-panel--categories">
+                  <a href="#">كاميرات مراقبة</a>
+                  <a href="#">شاشات</a>
+                  <a href="#">أسلاك وكيابل</a>
+                  <a href="#">أنظمة أمنية</a>
+                  <a href="#">شبكات</a>
+                  <a href="#">إكسسوارات</a>
+                  <a href="#">حلول المنازل</a>
+                  <a href="#">الصيانة</a>
+                  <a href="#">منتجات ذكية</a>
+                  <a href="#">بطاريات وشواحن</a>
+                  <a href="#">معدات تركيب</a>
+                  <a href="#">أجهزة حماية</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">العروض</a></li>
+          <li class="nav-item rac-nav-has-mega">
+            <a class="nav-link rac-nav-trigger" href="#" aria-haspopup="true" aria-expanded="false">
+              الماركات
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+            </a>
+            <div class="rac-mega-menu" aria-label="قائمة الماركات">
+              <div class="container">
+                <div class="rac-mega-panel rac-mega-panel--brands">
+                  <a href="#">Hikvision</a>
+                  <a href="#">Dahua</a>
+                  <a href="#">JBL</a>
+                  <a href="#">UGREEN</a>
+                  <a href="#">Green Lion</a>
+                  <a href="#">Spigen</a>
+                  <a href="#">Moxedo</a>
+                  <a href="#">SADA</a>
+                  <a href="#">Anker</a>
+                  <a href="#">Baseus</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item rac-nav-has-mega">
+            <a class="nav-link rac-nav-trigger" href="#" aria-haspopup="true" aria-expanded="false">
+              خدماتنا
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg>
+            </a>
+            <div class="rac-mega-menu" aria-label="قائمة الخدمات">
+              <div class="container">
+                <div class="rac-mega-panel rac-mega-panel--services">
+                  <a href="#">تركيب كاميرات وأنظمة مراقبة</a>
+                  <a href="#">صيانة أجهزة ودعم فني</a>
+                  <a href="#">حلول شبكات للمنازل والمنشآت</a>
+                  <a href="#">تجهيز المكاتب والمتاجر</a>
+                  <a href="#">استشارات تقنية قبل الشراء</a>
+                  <a href="#">دعم ومتابعة بعد البيع</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">تواصل معنا</a></li>
+        </ul>
+        <button class="nav-cart-btn me-2" id="cartBtnDesktop" type="button" aria-label="السلة">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg>
+          <span class="cart-badge" id="cartBadgeDesktop">0</span>
+        </button>
+        <a href="#" class="btn-alamah-cta d-inline-block"><span>تصفح الفئات</span></a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Offcanvas Sidebar -->
+  <div class="offcanvas offcanvas-start bg-white" tabindex="-1" id="navbarOffcanvas"
+    aria-labelledby="offcanvasNavbarLabel" style="width: 320px !important;">
+    <div class="offcanvas-header align-items-center justify-content-between"
+      style="border-bottom: 2px solid rgba(0,0,0,0.04); padding: 1.5rem;">
+      <h5 class="offcanvas-title mb-0" id="offcanvasNavbarLabel">
+        <img src="image/logo.png" alt="RAC" style="height: 40px !important; width: auto !important;">
+      </h5>
+      <button type="button" class="offcanvas-close-btn" data-bs-dismiss="offcanvas" aria-label="Close">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column" style="padding: 1.5rem;">
+      <ul class="navbar-nav pe-0 mb-auto">
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link d-flex align-items-center fw-bold" href="index.html" style="color: var(--alamah-navy);">
+            <svg class="me-3 flex-shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="var(--alamah-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            <span class="fs-5">الرئيسية</span>
+          </a>
+        </li>
+
+        <!-- الفئات accordion -->
+        <li class="nav-item border-bottom">
+          <a class="nav-link d-flex align-items-center justify-content-between fw-bold collapsed"
+            href="#mobileCategories" data-bs-toggle="collapse" aria-expanded="false" aria-controls="mobileCategories"
+            style="color: var(--alamah-navy); padding: 0.75rem 0;">
+            <span class="d-flex align-items-center">
+              <svg class="me-3 flex-shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="var(--alamah-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span class="fs-5">الفئات</span>
+            </span>
+            <svg class="mobile-submenu-arrow flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="var(--alamah-navy)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </a>
+          <div class="collapse" id="mobileCategories">
+            <ul class="list-unstyled mobile-submenu pe-4 pb-2">
+              <li><a href="#categories" data-bs-dismiss="offcanvas">كاميرات مراقبة</a></li>
+              <li><a href="#categories" data-bs-dismiss="offcanvas">شاشات</a></li>
+              <li><a href="#categories" data-bs-dismiss="offcanvas">أسلاك وكيابل</a></li>
+              <li><a href="#categories" data-bs-dismiss="offcanvas">أنظمة أمنية</a></li>
+              <li><a href="#categories" data-bs-dismiss="offcanvas">شبكات</a></li>
+              <li><a href="#categories" data-bs-dismiss="offcanvas">إكسسوارات</a></li>
+              <li><a href="#categories" data-bs-dismiss="offcanvas">حلول المنازل</a></li>
+              <li><a href="#categories" data-bs-dismiss="offcanvas">الصيانة</a></li>
+              <li><a href="#categories" data-bs-dismiss="offcanvas">منتجات ذكية</a></li>
+              <li><a href="#categories" data-bs-dismiss="offcanvas">بطاريات وشواحن</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item border-bottom py-2">
+          <a class="nav-link d-flex align-items-center fw-bold" href="#offersProducts" data-bs-dismiss="offcanvas"
+            style="color: var(--alamah-navy);">
+            <svg class="me-3 flex-shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="var(--alamah-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            <span class="fs-5">العروض</span>
+          </a>
+        </li>
+
+        <!-- الماركات accordion -->
+        <li class="nav-item border-bottom">
+          <a class="nav-link d-flex align-items-center justify-content-between fw-bold collapsed"
+            href="#mobileBrands" data-bs-toggle="collapse" aria-expanded="false" aria-controls="mobileBrands"
+            style="color: var(--alamah-navy); padding: 0.75rem 0;">
+            <span class="d-flex align-items-center">
+              <svg class="me-3 flex-shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="var(--alamah-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              <span class="fs-5">الماركات</span>
+            </span>
+            <svg class="mobile-submenu-arrow flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="var(--alamah-navy)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </a>
+          <div class="collapse" id="mobileBrands">
+            <ul class="list-unstyled mobile-submenu pe-4 pb-2">
+              <li><a href="#recommendedBrands" data-bs-dismiss="offcanvas">Hikvision</a></li>
+              <li><a href="#recommendedBrands" data-bs-dismiss="offcanvas">Dahua</a></li>
+              <li><a href="#recommendedBrands" data-bs-dismiss="offcanvas">JBL</a></li>
+              <li><a href="#recommendedBrands" data-bs-dismiss="offcanvas">UGREEN</a></li>
+              <li><a href="#recommendedBrands" data-bs-dismiss="offcanvas">Green Lion</a></li>
+              <li><a href="#recommendedBrands" data-bs-dismiss="offcanvas">Spigen</a></li>
+              <li><a href="#recommendedBrands" data-bs-dismiss="offcanvas">Anker</a></li>
+              <li><a href="#recommendedBrands" data-bs-dismiss="offcanvas">Baseus</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- خدماتنا accordion -->
+        <li class="nav-item border-bottom">
+          <a class="nav-link d-flex align-items-center justify-content-between fw-bold collapsed"
+            href="#mobileServices" data-bs-toggle="collapse" aria-expanded="false" aria-controls="mobileServices"
+            style="color: var(--alamah-navy); padding: 0.75rem 0;">
+            <span class="d-flex align-items-center">
+              <svg class="me-3 flex-shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"
+                stroke="var(--alamah-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.908.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <span class="fs-5">خدماتنا</span>
+            </span>
+            <svg class="mobile-submenu-arrow flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="var(--alamah-navy)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </a>
+          <div class="collapse" id="mobileServices">
+            <ul class="list-unstyled mobile-submenu pe-4 pb-2">
+              <li><a href="#footer" data-bs-dismiss="offcanvas">تركيب كاميرات وأنظمة مراقبة</a></li>
+              <li><a href="#footer" data-bs-dismiss="offcanvas">صيانة أجهزة ودعم فني</a></li>
+              <li><a href="#footer" data-bs-dismiss="offcanvas">حلول شبكات للمنازل والمنشآت</a></li>
+              <li><a href="#footer" data-bs-dismiss="offcanvas">تجهيز المكاتب والمتاجر</a></li>
+              <li><a href="#footer" data-bs-dismiss="offcanvas">استشارات تقنية قبل الشراء</a></li>
+              <li><a href="#footer" data-bs-dismiss="offcanvas">دعم ومتابعة بعد البيع</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="nav-item py-2">
+          <a class="nav-link d-flex align-items-center fw-bold" href="./contact.html"
+            style="color: var(--alamah-navy);">
+            <svg class="me-3 flex-shrink-0" width="22" height="22" viewBox="0 0 24 24" fill="none"
+              stroke="var(--alamah-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"></path>
+            </svg>
+            <span class="fs-5">تواصل معنا</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="mt-auto pt-4 text-center">
+        <a href="#categories" class="offcanvas-cta-btn" data-bs-dismiss="offcanvas">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span>تصفح الفئات</span>
+        </a>
+        <p class="text-muted mt-4 mb-0" style="font-size: 0.8rem; letter-spacing: 0.03em;">جميع الحقوق محفوظة © RAC
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════
+       HERO SLIDER
+       ═══════════════════════════════════ -->
+  <div class="hero-wrapper">
+    <section class="hero-section" id="hero">
+      <div class="hero-slider">
+        <div class="hero-slide active">
+          <img src="image/hero-1.png" alt="حلول RAC التقنية">
+        </div>
+        <div class="hero-slide">
+          <img src="image/hero-2.png" alt="منتجات تقنية مختارة من RAC">
+        </div>
+        <div class="hero-slide">
+          <img src="image/hero-3.png" alt="عروض RAC التقنية">
+        </div>
+      </div>
+      <div class="hero-dots" id="heroDots">
+        <div class="hero-dot active" data-slide="0"></div>
+        <div class="hero-dot" data-slide="1"></div>
+        <div class="hero-dot" data-slide="2"></div>
+      </div>
+      <div class="hero-progress">
+        <div class="hero-progress-bar" id="heroProgressBar"></div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- ═══════════════════════════════════
+       CATEGORIES
+       ═══════════════════════════════════ -->
+  <!-- TRUST FEATURES -->
+  <section class="trust-features-section" aria-label="مميزات RAC">
+    <div class="container">
+      <div class="trust-features-grid reveal">
+        <div class="trust-feature-card">
+          <div class="trust-feature-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 10.5L12 4l8 6.5v8a1.5 1.5 0 0 1-1.5 1.5H5.5A1.5 1.5 0 0 1 4 18.5z" />
+              <path d="M9 20v-6h6v6" />
+              <path d="M8 9.5h8" />
+            </svg>
+          </div>
+          <div>
+            <h3>متجر سعودي</h3>
+          </div>
+        </div>
+
+        <div class="trust-feature-card">
+          <div class="trust-feature-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3 7h11v10H3z" />
+              <path d="M14 10h4l3 3v4h-7z" />
+              <circle cx="7" cy="18" r="2" />
+              <circle cx="18" cy="18" r="2" />
+              <path d="M6 4h8" />
+            </svg>
+          </div>
+          <div>
+            <h3>توصيل سريع</h3>
+          </div>
+        </div>
+
+        <div class="trust-feature-card">
+          <div class="trust-feature-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z" />
+              <path d="M8.5 12.5l2.2 2.2 4.8-5" />
+            </svg>
+          </div>
+          <div>
+            <h3>ضمان وجودة</h3>
+          </div>
+        </div>
+
+        <div class="trust-feature-card">
+          <div class="trust-feature-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 12a8 8 0 0 1 16 0" />
+              <path d="M4 12v4a2 2 0 0 0 2 2h1v-6H4z" />
+              <path d="M20 12v4a2 2 0 0 1-2 2h-1v-6h3z" />
+              <path d="M9 21h3a4 4 0 0 0 4-4" />
+            </svg>
+          </div>
+          <div>
+            <h3>خدمة 24 ساعه</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="categories-section section-padding" id="categories">
+    <div class="container">
+      <div class="rac-categories-head reveal">
+        <div class="rac-category-controls">
+          <button class="rac-category-nav" id="racCategoryPrev" type="button" aria-label="السابق">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
+          </button>
+          <button class="rac-category-nav" id="racCategoryNext" type="button" aria-label="التالي">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6" /></svg>
+          </button>
+        </div>
+        <h2 class="rac-categories-title"><span></span>اقسام RAC</h2>
+      </div>
+
+      <div class="rac-categories-track reveal reveal-delay-1" id="racCategoriesTrack">
+        <a class="rac-category-item" href="products.html?cat=cameras">
+          <span class="rac-category-thumb rac-category-thumb--blue">
+            <img src="image/catgories/camera.png" alt="كاميرات">
+          </span>
+          <strong>كاميرات</strong>
+        </a>
+        <a class="rac-category-item" href="products.html?cat=screens">
+          <span class="rac-category-thumb rac-category-thumb--mint">
+            <img src="image/catgories/screens.jpg" alt="شاشات">
+          </span>
+          <strong>شاشات</strong>
+        </a>
+        <a class="rac-category-item" href="products.html?cat=cables">
+          <span class="rac-category-thumb rac-category-thumb--orange">
+            <img src="image/catgories/wires.jpg" alt="أسلاك وكيابل">
+          </span>
+          <strong>أسلاك وكيابل</strong>
+        </a>
+        <a class="rac-category-item" href="products.html?cat=security">
+          <span class="rac-category-thumb rac-category-thumb--navy">
+            <img src="image/catgories/Security%20systems.jpg" alt="أنظمة أمنية">
+          </span>
+          <strong>أنظمة أمنية</strong>
+        </a>
+        <a class="rac-category-item" href="products.html?cat=maintenance">
+          <span class="rac-category-thumb rac-category-thumb--violet">
+            <img src="image/catgories/Maintenance.jpg" alt="الصيانة">
+          </span>
+          <strong>الصيانة</strong>
+        </a>
+        <a class="rac-category-item" href="products.html?cat=network">
+          <span class="rac-category-thumb rac-category-thumb--cyan">
+            <img src="image/catgories/networks.jpg" alt="شبكات">
+          </span>
+          <strong>شبكات</strong>
+        </a>
+        <a class="rac-category-item" href="products.html?cat=accessories">
+          <span class="rac-category-thumb rac-category-thumb--soft">
+            <img src="image/catgories/accessories.jpg" alt="إكسسوارات">
+          </span>
+          <strong>إكسسوارات</strong>
+        </a>
+        <a class="rac-category-item" href="products.html?cat=services">
+          <span class="rac-category-thumb rac-category-thumb--offer">
+            <img src="image/catgories/Home%20solutions.jpg" alt="حلول المنازل">
+          </span>
+          <strong>حلول المنازل</strong>
+        </a>
+      </div>
+
+      <div class="row g-3 d-none">
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-1">
+          <a href="products.html?cat=giveaways" style="text-decoration:none;">
+            <div class="category-tile category-tile--blush">
+              <div class="category-tile-content">
+                <h3 class="category-tile-title">هدايا دعائية</h3>
+                <p class="category-tile-desc">هدايا مميزة تترك انطباعاً لا يُنسى</p>
+              </div>
+              <div class="category-tile-image">
+                <img src="image/cat-giveaways.png" alt="هدايا دعائية">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-2">
+          <a href="products.html?cat=car-hangers" style="text-decoration:none;">
+            <div class="category-tile category-tile--sage">
+              <div class="category-tile-content">
+                <h3 class="category-tile-title">معلقات سيارات</h3>
+                <p class="category-tile-desc">لمسة فاخرة لسيارتك بتصميم فريد</p>
+              </div>
+              <div class="category-tile-image">
+                <img src="image/cat-car-hangers.png" alt="معلقات سيارات">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-3">
+          <a href="products.html?cat=stickers" style="text-decoration:none;">
+            <div class="category-tile category-tile--butter">
+              <div class="category-tile-content">
+                <h3 class="category-tile-title">ستيكرات أجهزة</h3>
+                <p class="category-tile-desc">أضف طابعك الخاص لأجهزتك</p>
+              </div>
+              <div class="category-tile-image">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="20" y="15" width="45" height="70" rx="8" stroke="#1B2A5B" stroke-width="2.5"
+                    fill="rgba(27,42,91,0.04)" />
+                  <rect x="27" y="24" width="31" height="45" rx="3" stroke="#C9A96E" stroke-width="1.5" />
+                  <circle cx="42.5" cy="78" r="3.5" stroke="#1B2A5B" stroke-width="1.5" />
+                  <rect x="60" y="40" width="22" height="32" rx="4" stroke="#D63B2F" stroke-width="1.5"
+                    stroke-dasharray="4 2" fill="rgba(214,59,47,0.04)" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-4">
+          <a href="products.html?cat=laser" style="text-decoration:none;">
+            <div class="category-tile category-tile--lavender">
+              <div class="category-tile-content">
+                <h3 class="category-tile-title">حفر بالليزر</h3>
+                <p class="category-tile-desc">نقوش دقيقة بأعلى جودة</p>
+              </div>
+              <div class="category-tile-image">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="15" y="50" width="70" height="35" rx="5" stroke="#1B2A5B" stroke-width="2.5"
+                    fill="rgba(27,42,91,0.04)" />
+                  <path d="M50 12 L50 48" stroke="#D63B2F" stroke-width="2" stroke-linecap="round"
+                    stroke-dasharray="5 3" />
+                  <circle cx="50" cy="52" r="4" fill="#D63B2F" opacity="0.8" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-5">
+          <a href="products.html?cat=occasions" style="text-decoration:none;">
+            <div class="category-tile category-tile--peach">
+              <div class="category-tile-content">
+                <h3 class="category-tile-title">مناسبات</h3>
+                <p class="category-tile-desc">هدايا راقية لكل مناسبة</p>
+              </div>
+              <div class="category-tile-image">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="22" y="32" width="56" height="50" rx="6" stroke="#1B2A5B" stroke-width="2.5"
+                    fill="rgba(27,42,91,0.04)" />
+                  <path d="M22 46 L78 46" stroke="#1B2A5B" stroke-width="1.5" />
+                  <path d="M50 32 L50 18 C50 14 44 11 40 15" stroke="#D63B2F" stroke-width="2.5"
+                    stroke-linecap="round" />
+                  <path d="M50 32 L50 18 C50 14 56 11 60 15" stroke="#D63B2F" stroke-width="2.5"
+                    stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6 reveal reveal-delay-6">
+          <a href="products.html?cat=custom" style="text-decoration:none;">
+            <div class="category-tile category-tile--sky">
+              <div class="category-tile-content">
+                <h3 class="category-tile-title">طلبات خاصة</h3>
+                <p class="category-tile-desc">صمم ما تتخيله ونحن ننفذه</p>
+              </div>
+              <div class="category-tile-image">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M70 22 L35 80" stroke="#1B2A5B" stroke-width="2.5" stroke-linecap="round" />
+                  <circle cx="70" cy="22" r="5" stroke="#D63B2F" stroke-width="2" fill="rgba(214,59,47,0.1)" />
+                </svg>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       BEST SELLERS
+       ═══════════════════════════════════ -->
+  <section class="bestsellers-section section-padding" id="bestsellers">
+    <div class="container">
+      <div class="rac-categories-head product-strip-head reveal">
+        <div class="rac-category-controls">
+          <button class="rac-category-nav" id="featuredPrev" type="button" aria-label="السابق">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
+          </button>
+          <button class="rac-category-nav" id="featuredNext" type="button" aria-label="التالي">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6" /></svg>
+          </button>
+        </div>
+        <h2 class="rac-categories-title"><span></span>منتجات مميزة</h2>
+      </div>
+
+      <div class="featured-products-track reveal reveal-delay-1" id="bestsellerSlider">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- NEW PRODUCTS -->
+  <section class="bestsellers-section new-products-section section-padding" id="newProducts">
+    <div class="container">
+      <div class="rac-categories-head product-strip-head reveal">
+        <div class="rac-category-controls">
+          <button class="rac-category-nav" id="newProductsPrev" type="button" aria-label="السابق">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
+          </button>
+          <button class="rac-category-nav" id="newProductsNext" type="button" aria-label="التالي">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6" /></svg>
+          </button>
+        </div>
+        <h2 class="rac-categories-title"><span></span>أحدث المنتجات</h2>
+      </div>
+
+      <div class="featured-products-track reveal reveal-delay-1" id="newProductsSlider">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+       CTA BANNER 2
+       ═══════════════════════════════════ -->
+  <section class="cta-banner-section reveal" id="customOrder">
+    <img src="image/custom-order-banner.png" alt="حلول ومنتجات RAC">
+  </section>
+
+
+  <!-- WEEKLY BEST SELLERS -->
+  <section class="bestsellers-section week-products-section section-padding" id="weekProducts">
+    <div class="container">
+      <div class="rac-categories-head product-strip-head reveal">
+        <div class="rac-category-controls">
+          <button class="rac-category-nav" id="weekProductsPrev" type="button" aria-label="السابق">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
+          </button>
+          <button class="rac-category-nav" id="weekProductsNext" type="button" aria-label="التالي">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6" /></svg>
+          </button>
+        </div>
+        <h2 class="rac-categories-title"><span></span>الأكثر طلباً هذا الأسبوع</h2>
+      </div>
+
+      <div class="featured-products-track reveal reveal-delay-1" id="weekProductsSlider">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- ═══════════════════════════════════
+       CTA BANNER
+       ═══════════════════════════════════ -->
+  <section class="cta-banner-section reveal" id="customOrder">
+    <img src="image/custom-order-banner 2.png" alt="عروض RAC التقنية">
+  </section>
+
+  <!-- RECOMMENDED BRANDS -->
+  <section class="recommended-brands-section section-padding" id="recommendedBrands">
+    <div class="container">
+      <div class="recommended-brands-head reveal">
+        <div>
+          <h2 class="rac-categories-title"><span></span>ماركات ننصح بها</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="brands-marquee-wrap reveal reveal-delay-1" aria-label="ماركات ننصح بها">
+      <div class="brands-marquee-row">
+        <div class="brands-marquee-track brands-marquee-track--left">
+          <div class="brand-card"><img src="image/brands/brand%201.png" alt="Brand 1"></div>
+          <div class="brand-card"><img src="image/brands/brand%202.jpg" alt="Brand 2"></div>
+          <div class="brand-card"><img src="image/brands/brand%203.jpg" alt="Brand 3"></div>
+          <div class="brand-card"><img src="image/brands/brand%204.jpg" alt="Brand 4"></div>
+          <div class="brand-card"><img src="image/brands/brand%205.jpg" alt="Brand 5"></div>
+          <div class="brand-card"><img src="image/brands/brand%206.jpg" alt="Brand 6"></div>
+          <div class="brand-card"><img src="image/brands/brand%207.jpg" alt="Brand 7"></div>
+          <div class="brand-card"><img src="image/brands/brand%208.jpg" alt="Brand 8"></div>
+          <div class="brand-card"><img src="image/brands/brand%209.jpg" alt="Brand 9"></div>
+          <div class="brand-card"><img src="image/brands/brand%2010.jpg" alt="Brand 10"></div>
+          <div class="brand-card"><img src="image/brands/brand%201.png" alt="Brand 1"></div>
+          <div class="brand-card"><img src="image/brands/brand%202.jpg" alt="Brand 2"></div>
+          <div class="brand-card"><img src="image/brands/brand%203.jpg" alt="Brand 3"></div>
+          <div class="brand-card"><img src="image/brands/brand%204.jpg" alt="Brand 4"></div>
+          <div class="brand-card"><img src="image/brands/brand%205.jpg" alt="Brand 5"></div>
+          <div class="brand-card"><img src="image/brands/brand%206.jpg" alt="Brand 6"></div>
+          <div class="brand-card"><img src="image/brands/brand%207.jpg" alt="Brand 7"></div>
+          <div class="brand-card"><img src="image/brands/brand%208.jpg" alt="Brand 8"></div>
+          <div class="brand-card"><img src="image/brands/brand%209.jpg" alt="Brand 9"></div>
+          <div class="brand-card"><img src="image/brands/brand%2010.jpg" alt="Brand 10"></div>
+        </div>
+      </div>
+
+      <div class="brands-marquee-row brands-marquee-row--offset">
+        <div class="brands-marquee-track brands-marquee-track--right">
+          <div class="brand-card"><img src="image/brands/brand%206.jpg" alt="Brand 6"></div>
+          <div class="brand-card"><img src="image/brands/brand%207.jpg" alt="Brand 7"></div>
+          <div class="brand-card"><img src="image/brands/brand%208.jpg" alt="Brand 8"></div>
+          <div class="brand-card"><img src="image/brands/brand%209.jpg" alt="Brand 9"></div>
+          <div class="brand-card"><img src="image/brands/brand%2010.jpg" alt="Brand 10"></div>
+          <div class="brand-card"><img src="image/brands/brand%201.png" alt="Brand 1"></div>
+          <div class="brand-card"><img src="image/brands/brand%202.jpg" alt="Brand 2"></div>
+          <div class="brand-card"><img src="image/brands/brand%203.jpg" alt="Brand 3"></div>
+          <div class="brand-card"><img src="image/brands/brand%204.jpg" alt="Brand 4"></div>
+          <div class="brand-card"><img src="image/brands/brand%205.jpg" alt="Brand 5"></div>
+          <div class="brand-card"><img src="image/brands/brand%206.jpg" alt="Brand 6"></div>
+          <div class="brand-card"><img src="image/brands/brand%207.jpg" alt="Brand 7"></div>
+          <div class="brand-card"><img src="image/brands/brand%208.jpg" alt="Brand 8"></div>
+          <div class="brand-card"><img src="image/brands/brand%209.jpg" alt="Brand 9"></div>
+          <div class="brand-card"><img src="image/brands/brand%2010.jpg" alt="Brand 10"></div>
+          <div class="brand-card"><img src="image/brands/brand%201.png" alt="Brand 1"></div>
+          <div class="brand-card"><img src="image/brands/brand%202.jpg" alt="Brand 2"></div>
+          <div class="brand-card"><img src="image/brands/brand%203.jpg" alt="Brand 3"></div>
+          <div class="brand-card"><img src="image/brands/brand%204.jpg" alt="Brand 4"></div>
+          <div class="brand-card"><img src="image/brands/brand%205.jpg" alt="Brand 5"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAVING OFFERS -->
+  <section class="bestsellers-section offers-products-section section-padding" id="offersProducts">
+    <div class="container">
+      <div class="rac-categories-head product-strip-head reveal">
+        <div class="rac-category-controls">
+          <button class="rac-category-nav" id="offersProductsPrev" type="button" aria-label="السابق">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6" /></svg>
+          </button>
+          <button class="rac-category-nav" id="offersProductsNext" type="button" aria-label="التالي">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6" /></svg>
+          </button>
+        </div>
+        <h2 class="rac-categories-title"><span></span>عروض التوفير</h2>
+      </div>
+
+      <div class="featured-products-track reveal reveal-delay-1" id="offersProductsSlider">
+        <!-- Products injected by JS -->
+      </div>
+    </div>
+  </section>
+
+
+ <!-- ═══════════════════════════════════
+       CTA BANNER 3
+       ═══════════════════════════════════ -->
+  <section class="cta-banner-section reveal mb-3" id="customOrder">
+    <img src="image/custom-order-banner 3.png" alt="خدمات RAC التقنية">
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════ -->
+  <footer class="footer-alamah" id="footer">
+    <div class="container">
+      <div class="row g-5 justify-content-between">
+        <div class="col-lg-4 col-md-12 mb-4">
+          <div class="footer-brand">
+            <img src="image/logo.png" alt="RAC" class="mb-3">
+            <p>RAC منصة سعودية للحلول التقنية، نوفر منتجات موثوقة مثل الكاميرات، الشاشات، الأسلاك والإكسسوارات، مع خدمات تركيب وصيانة ودعم فني.</p>
+            <div class="footer-social mt-4 d-flex justify-content-start">
+              <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24">
+                  <path
+                    d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5M12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10m0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" />
+                </svg></a>
+              <a href="#" aria-label="Snapchat"><svg viewBox="0 0 24 24">
+                  <path
+                    d="M12.206 1c.34.006.654.04.96.106.96.206 1.786.63 2.46 1.26a5.8 5.8 0 0 1 1.674 3.014c.1.44.146.874.154 1.32.006.28-.006.56-.026.84-.014.18-.026.36-.04.54.16.08.34.12.52.12.24 0 .46-.06.68-.18.14-.08.28-.12.44-.12.1 0 .2.02.3.06.26.1.44.32.48.58.06.34-.1.64-.38.84-.34.24-.726.38-1.12.46-.16.034-.32.054-.48.074-.06.006-.1.026-.14.06-.06.06-.06.14-.04.22.1.42.26.82.48 1.2.34.58.766 1.08 1.26 1.48.3.24.62.46.96.64.2.1.4.2.62.26.18.06.3.18.34.36.04.2-.06.38-.22.5a2.4 2.4 0 0 1-.68.34c-.32.12-.66.2-.98.3-.06.02-.1.04-.14.1-.04.06-.04.12-.02.2.04.14.1.28.14.42.06.16.02.32-.1.44-.14.14-.32.2-.5.22-.22.02-.44-.02-.66-.06-.28-.06-.56-.12-.84-.14-.14-.006-.28 0-.42.04-.26.06-.5.18-.72.34-.38.28-.72.6-1.12.84-.52.32-1.08.54-1.68.66-.36.08-.72.1-1.08.1-.36 0-.72-.02-1.08-.1-.6-.12-1.16-.34-1.68-.66-.4-.24-.74-.56-1.12-.84a2.6 2.6 0 0 0-.72-.34c-.14-.04-.28-.046-.42-.04-.28.02-.56.08-.84.14-.22.04-.44.08-.66.06a.7.7 0 0 1-.5-.22c-.12-.12-.16-.28-.1-.44.04-.14.1-.28.14-.42.02-.08.02-.14-.02-.2-.04-.06-.08-.08-.14-.1-.32-.1-.66-.18-.98-.3a2.4 2.4 0 0 1-.68-.34c-.16-.12-.26-.3-.22-.5.04-.18.16-.3.34-.36.22-.06.42-.16.62-.26.34-.18.66-.4.96-.64.494-.4.92-.9 1.26-1.48.22-.38.38-.78.48-1.2.02-.08.02-.16-.04-.22-.04-.034-.08-.054-.14-.06-.16-.02-.32-.04-.48-.074-.394-.08-.78-.22-1.12-.46-.28-.2-.44-.5-.38-.84a.6.6 0 0 1 .48-.58c.1-.04.2-.06.3-.06.16 0 .3.04.44.12.22.12.44.18.68.18.18 0 .36-.04.52-.12-.014-.18-.026-.36-.04-.54-.02-.28-.032-.56-.026-.84.008-.446.054-.88.154-1.32A5.8 5.8 0 0 1 8.834 2.366 5.1 5.1 0 0 1 11.294 1.106c.3-.066.6-.1.912-.106z" />
+                </svg></a>
+              <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg></a>
+              <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="#fff" />
+                </svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4">
+          <h5 class="footer-heading">روابط المنصة</h5>
+          <div class="row pt-2">
+            <div class="col-6">
+              <ul class="footer-links list-unstyled pe-0 mb-0 d-flex flex-column align-items-start">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="#categories">الفئات</a></li>
+                <li><a href="#offersProducts">عروض التوفير</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="footer-links list-unstyled pe-0 mb-0 d-flex flex-column align-items-start">
+                <li><a href="#recommendedBrands">الماركات</a></li>
+                <li><a href="#footer">خدماتنا</a></li>
+                <li><a href="./contact.html">تواصل معنا</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 mb-4">
+          <h5 class="footer-heading">خدماتنا وتواصلنا</h5>
+          <ul class="footer-services-list list-unstyled pe-0 mb-4">
+            <li>تركيب كاميرات وأنظمة مراقبة</li>
+            <li>صيانة ودعم فني للأجهزة</li>
+            <li>حلول شبكات وتجهيزات تقنية</li>
+          </ul>
+          <ul class="footer-contact-new list-unstyled pe-0 pt-2">
+            <li class="d-flex align-items-start justify-content-start mb-3">
+              <svg class="me-3 flex-shrink-0 mt-1" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="var(--alamah-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>الرياض - حي الملقا - طريق الامير محمد بن سعد</span>
+            </li>
+            <li class="mb-3">
+              <a href="tel:+967784449090"
+                class="d-flex align-items-center justify-content-start footer-contact-link text-decoration-none">
+                <svg class="me-3 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="var(--alamah-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.908.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                <span dir="ltr">967784449090</span>
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="mailto:info@rac.sa"
+                class="d-flex align-items-center justify-content-start footer-contact-link text-decoration-none">
+                <svg class="me-3 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="var(--alamah-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span dir="ltr">info@rac.sa</span>
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="https://wa.me/967784449090" target="_blank" rel="noopener noreferrer"
+                class="d-flex align-items-center justify-content-start footer-contact-link text-decoration-none">
+                <svg class="me-3 flex-shrink-0" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="var(--alamah-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12c0 1.74.45 3.37 1.23 4.79L2 22l5.35-1.12c1.37.7 2.95 1.12 4.65 1.12 5.52 0 10-4.48 10-10S17.52 2 12 2z">
+                  </path>
+                </svg>
+                <span>واتساب</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-newsletter">
+        <div class="footer-newsletter-copy">
+          <h5>كن أول من يعلم!</h5>
+          <p>احصل على أحدث المنتجات وأحدث العروض والخصومات مباشرة من خلال الاشتراك في قائمتنا البريدية</p>
+        </div>
+        <form class="footer-newsletter-form" id="newsletterForm" action="#" aria-label="الاشتراك في النشرة البريدية">
+          <input type="email" class="footer-newsletter-input" placeholder="بريدك الإلكتروني" aria-label="بريدك الإلكتروني" required>
+          <button type="submit" class="footer-newsletter-btn">اشتراك</button>
+        </form>
+      </div>
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة © 2026 — <span class="footer-brand-en">RAC</span></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════
+       CART DRAWER
+       ═══════════════════════════════════ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3>🛒 سلة التسوق <span class="cart-count-label" id="cartCountLabel"></span></h3>
+      <button class="cart-close-btn" id="cartCloseBtn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+    <div class="cart-drawer-body" id="cartDrawerBody">
+      <!-- Cart items injected by JS -->
+    </div>
+    <div class="cart-drawer-footer" id="cartDrawerFooter" style="display:none;">
+      <div class="cart-total-row">
+        <span class="cart-total-label">المجموع</span>
+        <span class="cart-total-value" id="cartTotalValue">0</span>
+      </div>
+      <button class="btn-checkout-wa" id="btnCheckoutWa"
+        style="display:inline-flex;align-items:center;justify-content:center;gap:0.4rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+        </svg>
+        أكّد الطلب عبر واتساب</button>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════
+       CHECKOUT MODAL
+       ═══════════════════════════════════ -->
+  <div class="modal-overlay" id="checkoutModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 style="display:flex;align-items:center;gap:0.4rem;color:var(--alamah-navy);"><svg viewBox="0 0 24 24"
+            width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg> تأكيد الطلب</h3>
+        <button class="cart-close-btn" id="checkoutModalClose">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label for="customerName">الاسم الكريم *</label>
+        <input type="text" id="customerName" placeholder="أدخل اسمك الكامل" required>
+        <label for="customerPhone">رقم الجوال *</label>
+        <input type="tel" id="customerPhone" placeholder="05XXXXXXXX" dir="ltr" required>
+        <div id="orderSummaryPreview"
+          style="background:#FAFAFA;border-radius:8px;padding:1rem;margin-top:0.5rem;font-size:0.85rem;color:var(--alamah-navy);">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-checkout-wa" id="btnConfirmWa">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+            <path
+              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+          </svg>
+          إرسال
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════
+       CUSTOM FIELD MODAL
+       ═══════════════════════════════════ -->
+  <div class="modal-overlay" id="customFieldModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 style="display:flex;align-items:center;gap:0.4rem;color:var(--alamah-navy);"><svg viewBox="0 0 24 24"
+            width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+          </svg> بيانات المنتج</h3>
+        <button class="cart-close-btn" id="customFieldModalClose">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="customFieldBody">
+        <!-- Dynamic fields injected by JS -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn-modal-confirm" id="btnCustomFieldConfirm"
+          style="display:inline-flex;align-items:center;justify-content:center;gap:0.4rem;"><svg viewBox="0 0 24 24"
+            width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg> أضف للسلة</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════
+       FLOATING WHATSAPP
+       ═══════════════════════════════════ -->
+  <a href="https://wa.me/967784449090" target="_blank" rel="noopener" class="whatsapp-float" aria-label="واتساب">
+    <svg viewBox="0 0 24 24" fill="#fff">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+      <path
+        d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 0 1-4.243-1.214l-.252-.151-2.734.734.734-2.734-.164-.265A7.96 7.96 0 0 1 4 12a8 8 0 1 1 16 0 8 8 0 0 1-8 8z" />
+    </svg>
+    <span class="whatsapp-float-label">تواصل معنا</span>
+  </a>
+
+
+  <!-- ═══════════════════════════════════
+       BACK TO TOP
+       ═══════════════════════════════════ -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+    <svg viewBox="0 0 24 24">
+      <path d="M18 15l-6-6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </svg>
+  </button>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
