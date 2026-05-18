@@ -634,12 +634,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('click', (e) => {
     const disabledLink = e.target.closest('.navbar-alamah a, #navbarOffcanvas a, .footer-alamah a');
     if (!disabledLink) return;
-    const href = disabledLink.getAttribute('href');
-    // Only block pure placeholder links (#), allow real pages & anchors with IDs
-    if (!href || href === '#') {
-      e.preventDefault();
-      e.stopImmediatePropagation();
-    }
+    e.preventDefault();
+    e.stopImmediatePropagation();
   }, true);
 
   initHeroSlider();
