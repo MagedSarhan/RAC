@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   علامة | ALAMAH — Main JavaScript
+   RAC | ALAMAH — Main JavaScript
    E-Commerce System: Cart, Products, WhatsApp Checkout
    ═══════════════════════════════════════════════════════════ */
 
@@ -1185,7 +1185,7 @@ function initCheckoutEvents() {
 
 function sendWhatsAppOrder(name, phone) {
   const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
-  let msg = `🛍️ *طلب جديد من متجر علامة*\n`;
+  let msg = `🛍️ *طلب جديد من متجر RAC*\n`;
   msg += `━━━━━━━━━━━━━━━━━\n`;
   msg += `👤 *الاسم:* ${name}\n`;
   msg += `📱 *الجوال:* ${phone}\n`;
@@ -1203,7 +1203,7 @@ function sendWhatsAppOrder(name, phone) {
   msg += `━━━━━━━━━━━━━━━━━\n`;
   msg += `💰 *المجموع الكلي: ${total} ر.س*\n`;
   msg += `━━━━━━━━━━━━━━━━━\n`;
-  msg += `شكرًا لاختياركم علامة ✨`;
+  msg += `شكرًا لاختياركم RAC ✨`;
 
   const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
   window.open(url, '_blank');
@@ -1325,8 +1325,8 @@ function renderProductDetail() {
         <div class="pd-custom-field">
           <label for="pd_cf_${i}">${f.label} ${f.required ? '<span style="color:var(--alamah-red);">*</span>' : ''}</label>
           ${f.type === 'textarea'
-            ? `<textarea id="pd_cf_${i}" rows="3" placeholder="أدخل ${f.label}" ${f.required ? 'required' : ''}></textarea>`
-            : `<input type="text" id="pd_cf_${i}" placeholder="أدخل ${f.label}" ${f.required ? 'required' : ''}>`}
+        ? `<textarea id="pd_cf_${i}" rows="3" placeholder="أدخل ${f.label}" ${f.required ? 'required' : ''}></textarea>`
+        : `<input type="text" id="pd_cf_${i}" placeholder="أدخل ${f.label}" ${f.required ? 'required' : ''}>`}
         </div>`).join('')
     : '';
 
@@ -1400,7 +1400,7 @@ function renderProductDetail() {
   document.getElementById('pdQtyPlus')?.addEventListener('click', () => { qty++; qtyVal.textContent = qty; });
 
   // Add to cart
-  document.getElementById('pdAddToCart')?.addEventListener('click', function() {
+  document.getElementById('pdAddToCart')?.addEventListener('click', function () {
     const customData = {};
     let valid = true;
     if (product.customFields && product.customFields.length > 0) {
@@ -1472,7 +1472,7 @@ function handleContactForm(e) {
     return false;
   }
 
-  let msg = `📩 *رسالة جديدة من موقع علامة*\n`;
+  let msg = `📩 *رسالة جديدة من موقع RAC*\n`;
   msg += `━━━━━━━━━━━━━━━━━\n`;
   msg += `👤 *الاسم:* ${name}\n`;
   msg += `📱 *الجوال:* ${phone}\n`;
